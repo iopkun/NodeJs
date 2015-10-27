@@ -2,8 +2,8 @@ FROM node
 
 WORKDIR /tmp
 
-RUN mkdir -p /data/www
+RUN mkdir -p /data/app
 VOLUME ["/data"]
-WORKDIR /data/www
+WORKDIR /data/app
 
 ENTRYPOINT ["npm"]
